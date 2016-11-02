@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.main-body{
+	position: absolute;
+	padding: 20px;
+	background-color: #eee;
+}
+.left{
+	float: left;
+	width: 200px;
+}
+.contain{
+	padding: 20px;
+    margin-left: 220px;
+	margin-right: 140px; 
+	line-height: 30px;
+}
+.right{
+	width: 120px;
+	float: right;
+	text-align: center;	
+}
+.border{
+	border: solid 1px #999;
+}
+.bg{
+	background-color: #FFF;
+}
+h3{
+	margin-left: -13px;
+	margin-top: 20px;
+}
+img{
+	width:80px;
+	height: 80px;
+	padding: 20px;
+	float: left;
+}
+p{
+	margin-top: 30px;
+	text-indent: 2em;
+}
+a{
+	text-decoration: none;
+}

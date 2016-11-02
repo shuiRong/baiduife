@@ -1,0 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.block{
+	width:400px;
+	height: 200px;
+	background-color: #ccc;
+	position: relative;
+}
+.circle{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #FC0;
+}
+#left-top-circle{
+	top: 0;
+	left: 0;
+	border-bottom-right-radius: 100%;
+}
+#right-bottom-circle{
+	right: 0;
+	bottom: 0;
+	border-top-left-radius: 100%;
+}
