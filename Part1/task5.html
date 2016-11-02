@@ -1,14 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="css/task4.css">  
+    <meta charset="UTF-8">
+    <title>Task5</title>
+    <link rel='stylesheet' href='css/task5.css'>
 </head>
 <body>
-	<div id='rectangle'>
-		<div id='left-top'></div>
-		<div id='right-bottom'></div>
+	<div id='nav'>
+		<span>前端</span>
+        <ul>
+            <li>导航链接4</li>
+            <li>导航链接3</li>
+            <li>导航链接2</li>
+            <li>导航链接1</li>
+        </ul>
+	</div>
+	<div id='main'>
+        <div id='right'>
+            <h3>这里是一个侧标题，这是侧栏的标题</h3>
+            <div id='table-container'>
+                <div class='row'>
+                    <div class='cell left'>请输入邮箱地址</div><input  class='cell right text' type='text' placeholder="这是一个文本输入框">
+                </div>
+                <div class='row'>   
+                    &nbsp;    
+                </div>
+                <div class='row'>
+                <div class='cell'></div><div class='cell right p'>邮箱地址请按要求输入</div>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left '>请输入密码</div><input type='password' class='cell right text'>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left '>请重复输入密码</div><input class='cell right text' type='pasword'>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell'></div><div class='cell right p'>密码为6-16位英文数字</div>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left'>性别</div>
+                    <div class='cell right'>
+                        <input type='radio' name='rad' value='男' checked='checked'><span>男</span><input type='radio' name='rad' value='女'><span>女</span>
+                    </div>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left'>城市</div>
+                    <select class='cell right'>
+                            <option value='北京'>北京</option>
+                            <option value='上海'>上海</option>
+                            <option value='杭州'>杭州</option>
+                            <option value='苏州'>苏州</option>
+                    </select>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left'>爱好</div>
+                    <div class='cell right'>
+                        <input type='checkbox' value='运动' name='check'><span>运动</span><input type='checkbox' value='艺术' name='check'><span>艺术</span><input type='checkbox' value='科学' name='check'><span>科学</span>
+                    </div>
+                </div>
+                 <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <div class='cell left miaoshu'>描述</div>
+                    <textarea class='cell right' placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+                </div>
+            </div>
+            <input id='submit' type='submit' value='确认提交'>
+        </div>
+		<div class='article'>
+            <h1>文章一级标题</h1>
+            <h3>文章二级标题</h3>
+            <h5>作者、发表时间</h5>
+            <p>请重复输入密码请重复输入密码请<a href='#'>重复输入密码</a>重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重请重复输入密码请重复输入密码请重复输入密码<a href='#'>重复输入密码</a>请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码</p>
+        </div>
+		<div class='article'>
+            <h1>文章一级标题</h1>
+            <h3>文章二级标题</h3>
+            <h5>作者、发表时间</h5>
+            <p>请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复<a href='#'>重复输入密码</a>输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复<a href='#'>重复输入密码</a>输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码请重复输入密码</p>
+        </div>
+		<div class='article'>
+            <h1>图片</h1>
+            <img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'><img src='#' alt='好看的图片'>
+        </div>
+		<div class='article'>
+            <h1>最后一篇文章一级标题</h1>
+            <h3>二级标题</h3>
+            <h5>作者、发表时间</h5>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <table>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                 <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                 <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                 <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                 <tr>
+                    <td style='background-color:grey'>总计</td>
+                    <td colspan='2' style='background-color:grey'>1000</td>
+                </tr>
+            </table>
+        </div>
+	</div>
+	<div id='footer'>
+		<p>版权所有©</p>
 	</div>
 </body>
 </html>
