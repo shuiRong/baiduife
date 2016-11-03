@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:grey;
+}
+#container{
+	background-color:white;
+	width:980px;
+	height:1386px;
+	margin:0px auto 0 auto;
+}
+#up{
+	background-color:lightgreen;
+
+}
