@@ -1,0 +1,643 @@
+*{
+	margin:0;
+	padding:0;
+}
+/************************************************/
+body{
+	width:1280px;
+	min-width:450px;
+	background-color:black;
+	font-size:14px;
+	font-family:'微软雅黑';
+}
+#nav{
+	position:relative;
+	height:60px;
+	background-color:white;
+}
+#nav >div:first-child{
+	position:relative;
+	float:left;
+	width:120px;
+	height:60px;
+	margin-left:80px;
+	margin-top:15px;
+}
+#icon1{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	background-image: url("E:\\baiduife\\Part1-shuiRong\\images\\7-1.png");
+	background-size:100% 100%;
+}
+#nav >div:first-child >span:last-child{
+	display:inline-block;
+	margin-left:7px;
+	position:absolute;
+	top:0px;
+	font-size:25px;
+}
+#nav ul{
+	position:absolute;
+	top:20px;
+	left:600px;
+	list-style-type:none;
+	padding:0;
+}
+#nav li{
+	display:inline;
+	margin-right:25px;
+}
+#nav a{
+	color:black;
+	text-decoration:none;
+	padding-bottom:16px;
+	transition:1s border;
+	border-bottom:5px solid white;
+}
+#nav a:hover{
+	border-bottom:5px solid red;
+	color:red;
+}
+#nav >div:last-child{
+	width:100px;
+	height:60px;
+	position:absolute;
+	right:55px;
+}
+#icon2{
+	position:absolute;
+	top:20px;
+	display:inline-block;
+	width:15px;
+	height:18px;
+	background-image:url('../images/7-2.jpg');
+	background-size:100% 100%;
+}
+#nav >div:last-child >span:last-child{
+	position:absolute;
+	top:20px;
+	left:34px;
+	color:red;
+}
+
+/************************************************/
+#top-pic-div{
+	position:relative;
+	height:650px;
+}
+#top-pic-div img{
+	position:absolute;
+	top:0;
+	left:0;
+	height:650px;
+	width:100%;
+}
+#div-in-pic{
+	position:absolute;
+	top:200px;
+	left:121px;
+	padding:20px;
+	color:white;
+}
+#div-in-pic p:first-child{
+	font-size:60px;
+}
+#div-in-pic p:nth-child(2){
+	position:relative;
+	left:420px;
+	font-size:25px;
+
+}
+#div-in-pic p:nth-child(3){
+	margin-top:10px;
+}
+.adele{
+	font-size:20px;
+	line-height:30px;
+}
+#div-in-pic >span{
+	display:inline-block;
+	margin-top:60px;
+	position:relative;
+	width:300px;
+	height:60px;
+	background-color:red;
+	border-width:1px;
+}
+#div-in-pic >span >span{
+	font-size:200%;
+	position:absolute;
+	top:10px;
+	left:90px;
+}
+
+/************************************************/
+#four-icon{
+	height:240px;
+	background-color:white;
+	position:relative;
+}
+#container{
+	position:absolute;
+	top:60px;
+	left:20px;
+}
+#four-icon .row{
+	display:table-row;
+}
+#four-icon .cell{
+	text-align:center;
+	display:table-cell;
+}
+#four-icon .icon{
+	width:300px;
+	height:80px;
+}
+#four-icon .sentence{
+	padding:0 40px 0 40px;
+	border-right:3px solid grey;
+	transition:0.6s;
+}
+#four-icon .sentence:hover{
+	color:red;
+}
+#four-icon div:last-child{
+	border:0;
+}
+
+/************************************************/
+
+#new-world{
+	height:400px;
+	background-color:#EDEAEA;
+}
+#new-world >div{
+	padding-top:80px;
+	text-align:center;
+}
+#new-world >div p{
+	margin-top:60px;
+	color:black;
+	font-size:300%;
+	transition:0.4s;
+}
+#new-world >div p:hover{
+	color:red;
+}
+
+/************************************************/
+
+#search-world{
+	width:100%;
+	height:300px;
+	background-color:white;
+	position:relative;
+}
+#search-world img{
+	height:300px;
+	width:100%;
+}
+#search-world >div:first-child{
+	color:white;
+	position:absolute;
+	top:40px;
+	font-size:180%;
+	width:100%;
+	text-align:center;
+}
+#search-world >div:first-child>p:first-child{
+	margin-bottom:-20px;
+}
+#search-world>div:first-child>span{
+	display:inline-block;
+	width:30px;
+	background-color:white;
+	height:2px;
+	transition:0.5s;
+}
+#search-world >div:first-child>span:hover{
+	width:240px;
+}
+#search-world>div:first-child>p:last-child {
+	margin-top:17px;
+	font-size:15px;
+}
+#search-world >div:last-child{
+	position:absolute;
+	bottom:50px;
+	left:130px;
+}
+
+#search-world .select{
+	width:228px;
+	background-color:#EEE;
+	height:34px;
+	margin-right:30px;
+	display:inline-block;
+	position:relative;
+}
+#search-world .grey-font{
+	position:absolute;
+	top:6px;
+	left:10px;
+	color:grey;
+}
+#search-world .trangle{
+	position:absolute;
+	top:8px;
+	right:5px;
+	border-top:20px solid rgb(190,79,72);
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+}
+#four >span{
+	position:absolute;
+	top:5px;
+	left:90px;
+	font-size:125%;
+	color:white;
+}
+#search-world #four{
+	background-color:rgb(190,79,72);
+	transition:0.5s;
+}
+#search-world #four:hover{
+	background-color:red;
+}
+
+
+/************************************************/
+#activity{
+	height:500px;
+	background-color:#EDEAEA;
+	position:relative;
+}
+#activity > div{
+	padding-top:70px;
+	width:960px;
+	height:370px;
+	margin:0 auto;
+}
+#activity > div >div{
+	display:inline-block;
+	width:200px;
+	height:370px;
+	margin:0 auto;
+	text-align:center;
+}
+#activity >div >div:first-child{
+	float:left;
+}
+#activity >div >div:last-child{
+	float:right;
+}
+#activity >div>div:nth-child(2){
+	margin:0 26px 0 52px;
+}
+#activity >div>div:nth-child(3){
+	margin:0 52px 0 25px;
+	position:absolute;   /*不加这两句的话，第二个div字体大小变化，第三个div就会向下移动。不晓得为啥。只好定住它*/
+	top:70px;
+}
+#activity img{
+	width:200px;
+	height:300px;
+}
+#activity p{
+	color:grey;
+}
+#activity .activity-first-p{
+	color:black;
+	margin:8px 0;
+}
+#activity >div>div:nth-child(2) >span{
+	font-size:150%;
+	margin-right:20px;
+}
+#activity >div>div:nth-child(2) >p{
+	margin:12px 0;
+}
+
+
+
+/************************************************/
+#up-table{
+	height:560px;
+	background-color:white;
+	position:relative;
+}
+#up-table img{
+	width:68%;
+	height:560px;
+}
+#message{
+	width:384px;
+	position:absolute;
+	left:243px;
+	top:70px;
+	color:white;
+	text-align:center;
+}
+#message p:first-child{
+	font-size:380%;
+}
+#message p:nth-child(2){
+	font-size:1100%;
+}
+#message p:nth-child(3){
+	font-size:230%;
+}
+#message p:nth-child(4){
+	font-size:200%;
+}
+#lunbo{
+	position:absolute;
+	color:black;
+	top:0;
+	right:0;
+	width:409px;
+}
+#lunbo input{
+	display:none;
+}
+#lunbo ul{
+	position:absolute;
+	top:390px;
+	left:170px;
+	z-index:100;
+}
+#lunbo li{
+	display:inline-block;
+	font-size:45px;
+	color:grey;
+}
+#lunbo .input:checked + .item{
+	opacity:1;
+	z-index:10;  /*这个css解决 无法hover的问题*/
+}
+#lunbo .item{
+	opacity:0;
+	top:140px;
+	position:absolute;
+	text-align:start;
+	line-height:25px;
+	padding:40px;
+	color:grey;
+	z-index:1;
+}
+#lunbo .item p:first-child{
+	font-size:20px;
+	text-align:center;
+	margin-bottom:25px;
+	color:black;
+}
+#lunbo .item p:first-child >span{
+	color:#BE4F48;;
+}
+#lunbo .item p:last-child{
+	display:inline-block;
+	width:105px;
+	height:30px;
+	margin:50px auto 0 34%;
+	background-color:white;
+	text-align:center;
+	padding-top:5px;
+	border:1px solid red;
+	color:red;
+	transition:0.6s;
+}
+#lunbo .item p:last-child:hover{
+	border-radius:4%;
+	color:white;
+	background-color:red;
+}
+/************************************************/
+#down-table{
+	height:520px;
+	background-color:green;
+}
+#down-table >div:first-child{
+	position:relative;
+	display:inline-block;
+	width:34%;
+	height:100%;
+	background-color:red;
+}
+#down-table >div:nth-child(2){
+	position:relative;
+	display:inline-block;
+	width:34%;
+	height:100%;
+	background-color:white;
+}
+#down-table >div:nth-child(3){
+	display:inline-block;
+	width:32%;
+	height:100%;
+	background-color:lightgreen;
+}
+#down-table-left,#down-table-right{
+	width:180px;
+	height:200px;
+	position:absolute;
+	top:200px;
+	left:127px;
+	font-size:140%;
+	text-align:center;
+}
+#down-table-left{
+	color:white;
+}
+#down-table-right{
+	color:red;
+}
+#down-table-left >span:nth-child(3),#down-table-right >span:nth-child(3){
+	display:inline-block;
+	background-color:white;
+	width:40px;
+	height:3px;
+	transition:0.6s;
+	margin-bottom:40px;
+}
+#down-table-right >span:nth-child(3){
+	background-color:red;
+}
+#down-table-left >span:nth-child(3):hover,#down-table-right >span:nth-child(3):hover{
+	width:160px;
+}
+#down-table-left p,#down-table-right p{
+	margin:10px 0;
+}
+#down-table-left >span:last-child{
+	position:relative;
+	display:inline-block;
+	border:1px solid white;
+	width:140px;
+	height:34px;
+	transition:0.5s;
+}
+#down-table-left >span:last-child:hover{
+	background-color:white;
+	border-radius:4%;
+	color:red;
+}
+#down-table-right >span:last-child{
+	position:relative;
+	display:inline-block;
+	border:1px solid red;
+	width:140px;
+	height:34px;
+	transition:0.5s;
+}
+#down-table-right >span:last-child:hover{
+	background-color:red;
+	border-radius:4%;
+	color:white;
+}
+#down-table-left span:last-child,#down-table-right span:last-child{
+	position:relative;
+	top:3px;
+}
+#down-table >div:last-child img{
+	width:100%;
+	height:520px;
+}
+/************************************************/
+
+#volunteer{
+	border:1px solid white;  
+	height:800px;
+	background-color:white;
+}
+#volunteer-up{
+	margin:90px auto;
+	width:520px;
+	text-align:center;
+}
+#volunteer-up p:first-child{
+	font-size:150%;
+}
+#volunteer-up span:nth-child(2){
+	display:inline-block;
+	width:40px;
+	height:3px;
+	background-color:red;
+	transition:0.5s;
+	margin-bottom:30px;
+	margin-top:10px;
+}
+#volunteer-up span:nth-child(2):hover{
+	width:170px;
+}
+#volunteer-up p:nth-child(3){
+	color:grey;
+}
+#volunteer-down{
+	position:relative;
+	width:100%;
+}
+#volunteer-down-left{
+	width:30%;
+	margin:0 60px 0 60px;
+	color:grey;
+}
+#volunteer-down-left .titlex{
+	font-size:120%;
+	margin-bottom:15px;
+}
+#volunteer-down-left span{
+	display:inline-block;
+	position:relative;
+	left:320PX;
+	margin-bottom:50px;
+}
+#volunteer-down-right{
+	position:absolute;
+	top:0px;
+	right:100px;
+	width:50%;
+}
+#volunteer-down-right input{
+	width:280px;
+	height:20px;
+	margin:10px 10px 10px auto;
+	background-color:rgb(227,227,227);
+	border:1px solid white;
+	padding:10px;
+}
+
+#volunteer-down-right textarea{
+	width:600px;
+	height:160px;
+	padding:10px;
+	border:1px solid #DDD;
+}
+#volunteer-down-right input:last-child{
+	width:620px;
+	height:40px;
+	transition:0.5s;
+}
+#volunteer-down-right input:last-child:hover{
+	border-radius:3%;
+	box-shadow:0 0 3px 0 grey;
+}
+
+/************************************************/
+#footer{
+	height:460px;
+	background-color: #33363F;
+	border-top:1px solid white;
+	position:relative;
+}
+#footer >div{
+	width:50%;
+	margin:120px auto;
+	text-align:center;
+}
+#footer >div p:first-child{
+	font-size:120%;
+	color:white;
+	margin-bottom:20px;
+}
+#footer >div p:nth-child(2){
+	color:white;
+}
+#footer input:nth-child(3){
+	padding-left:2%;
+	width:77%;
+	height:40px;
+	border:1px solid white;
+}
+#footer input:nth-child(4){
+	width:20%;
+	background-color:rgb(94,94,104);
+	height:39px;
+	border:1px solid transparent;
+	text-align:center;
+	font-size:120%;
+	padding-bottom:1px;
+}
+#foot{
+	position:absolute;
+	height:70px;
+	width:100%;
+	background-color:#30303A;
+	bottom:0;
+	left:0;
+	color:white;
+}
+#foot a{
+	color:white;
+	text-decoration:none;
+}
+#foot span:first-child{
+	position:absolute;
+	top:25px;
+	left:100px;
+}
+#foot span:last-child{
+	position:absolute;
+	top:25px;
+	right:100px;
+}

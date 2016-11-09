@@ -9,6 +9,7 @@ body{
 	font-family:"微软雅黑";
 }
 #container{
+	overflow:hidden;
 	width:892px;
 	height:1386px;
 	background-color:white;
