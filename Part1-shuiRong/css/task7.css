@@ -6,9 +6,13 @@
 body{
 	width:1280px;
 	min-width:450px;
-	background-color:black;
+	background-color:white;
 	font-size:14px;
 	font-family:'微软雅黑';
+}
+#container{
+	width:100%;
+	margin:0 auto;
 }
 #nav{
 	position:relative;
@@ -27,7 +31,7 @@ body{
 	display:inline-block;
 	width:30px;
 	height:30px;
-	background-image: url("E:\\baiduife\\Part1-shuiRong\\images\\7-1.png");
+	background-image: url("../images/7-1.png");
 	background-size:100% 100%;
 }
 #nav >div:first-child >span:last-child{
