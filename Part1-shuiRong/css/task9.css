@@ -1,0 +1,759 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:content-box;/*这个地方比较坑，因为bootstrap对 * 通配符有个设置就是：box-sizing:border-box 所以我就需要在这里先声明了。*/
+	/*而且为了防止bootstrap覆盖掉这个设置，需要在html里把bootstrap的引用文件放在上面*/
+}
+body{
+	background:lightblue;
+	width:1280px;
+	height:1256px;
+	font-size:12px;
+	font-family:Microsoft YaHei,arial,sans-serif,'宋体';
+}
+/*----------------------------------------------*/
+#nav{
+	width:100%;
+	height:56px;
+	background:#2189bf;
+}
+#nav img:first-child{
+	margin:10px 0 0 50px;
+}
+#nav >div{
+	float:right;
+	margin:14px 100px auto auto;
+}
+#nav input{
+	height:30px;
+	width:170px;
+	border-radius:0 15px 15px 0;
+	outline:none; 
+	border:none;
+	transition:0.3s ease-out;
+}
+#nav input:focus{
+	width:330px;
+}
+#search-logo{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	background:white;
+	color:#999;
+	position:relative;
+	top:-7px;
+	border-radius:15px 0 0 15px;
+}
+#search-logo >span{
+	position:relative;
+	top:7px;
+	left:10px;
+	font-size:110%;
+}
+#user-logo{
+	color:white;
+	margin:auto 8px auto 15px;
+}
+#nav >div >span:last-child a{
+	color:white;
+	text-decoration:none;
+	cursor:auto;
+}
+
+/*----------------------------------------------*/
+
+#main{
+	position:relative;
+	background:pink;
+	width:100%;
+	height:1200px;
+}
+
+/*----------------------------------------------*/
+#aside{
+	width:260px;
+	height:100%;
+	background:black;
+	float:left;
+}
+#profile{
+	width:200px;
+	height:130px;
+	color:white;
+}
+#profile >span:first-child{
+	box-sizing:border-box;  /*这里用怪异模式下的盒模型吧*/
+	display:inline-block;
+	background:black;
+	width:58px;
+	height:58px;
+	border-radius:50%;
+	margin:16px 20px 20px 50px;
+	border:2px solid grey;
+}
+#profile img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	position:relative;
+	top:2px;
+	left:2px;
+}
+#profile >span:nth-child(2){
+	font-size:120%;
+	font-weight:bold;
+}
+#profile >div:last-child{
+	width:120px;
+	height:36px;
+	overflow:visible;
+	margin-left:60px;
+	color:#6e8095;
+}
+#profile .profile-left{
+	margin-right:50px;
+}
+#profile span:nth-child(4){
+	margin-right:45px;
+}
+
+#after-profile{
+	width:100%;
+	height:122px;
+	background:#383d4e;;
+	color:white;
+}
+#after-profile >p{
+	height:28px;
+	margin:0;
+	width:100%;
+}
+#after-profile >p:first-child{
+	height:30px;
+}
+#after-profile >p:nth-child(2)>span:nth-child(2),#after-profile >p:nth-child(4)>span:nth-child(2){
+	margin-right:10px;
+}
+#after-profile >p:nth-child(3){
+	margin:0;
+}
+#after-profile >p:nth-child(4){
+	color:grey;
+}
+#after-profile >p:nth-child(4):hover{
+	color:white;
+}
+.profile-icon-inside{
+	margin:10px 10px 0 66px;
+}
+#after-profile >p:nth-child(3) >span:first-child{
+	margin:10px 10px 0 105px;
+}
+
+
+#after-after-profile{
+	width:100%;
+	height:190px;
+	color:grey;
+}
+.after-profile-icon{
+	margin:0;
+	display:inline-block;
+	height:38px;
+	width:100%;
+}
+.aside-level-one{
+	margin:10px 10px 0 45px;
+}
+#after-after-profile >p:hover{
+	background:#383d4e;
+}
+/*----------------------------------------------*/
+#content{
+	width:1020px;
+	height:100%;
+	background:#eeeeed;
+	float:right;
+}
+/*----------------------------------------------*/
+#content-nav{
+	width:100%;
+	height:30px;
+	background:white;
+}
+#content-nav > span{
+	display:inline-block;
+	color:grey;
+	margin-left:21px;
+	margin-top:8px;
+}
+.content-nav-span{
+	margin:auto 9px auto 9px;
+}
+.content-nav-span:hover{
+	color:#2189bf;
+}
+#content-nav > span > span:last-child{
+	color:#2189bf;
+}
+/*----------------------------------------------*/
+#content-main{
+	width:900px;
+	background:#eeeeed;
+	margin:20px 60px;
+}
+/*----------------------------------------------*/
+#main-up-one{
+	width:100%;
+	height:75px;
+	background:white;
+	margin-bottom:8px;
+	color:grey;
+	position:relative;
+}
+#main-up-one select{
+	color:black;
+	padding-left:4px;
+}
+#main-up-one>div:first-child{
+	display:inline-block;
+	width:390px;
+	height:60px;
+	position:absolute;
+	top:0;
+	display:inline-block;
+}
+#main-up-one >div:first-child select{
+	width:130px;
+	margin-bottom:5px;
+}
+#main-up-one >div:first-child span{
+	margin-right:5px;
+}
+#main-up-one >div:first-child>div:nth-child(1){
+	height:60px;
+	width:175px;
+	margin-top:15px;
+	margin-left:30px;
+}
+#main-up-one >div:first-child>div:nth-child(1)>select{
+	width:80px;
+}
+#main-up-one >div:first-child>div:nth-child(2){
+	position:absolute;
+	top:15px;
+	left:180px;
+	width:175px;
+}
+#main-up-one img{
+	position:absolute;
+	top:10px;
+	right:0;
+}
+#main-up-one >div:nth-child(2){
+	position:absolute;
+	top:0;
+	right:120px;
+	display:inline-block;
+	height:65px;
+	padding-top:15px;
+}
+#main-up-one>div:nth-child(2) span{
+	margin-right:5px;
+}
+#waste-time{
+	margin-left:12px;
+}
+.main-up-one-bottom{
+	margin-bottom:5px;
+}
+#main-up-one>div:nth-child(2) select{
+	width:80px;
+}
+#main-up-one>div:nth-child(2) input,#main-up-one>div:nth-child(2)>select:last-child{
+	width:140px;
+	padding-left:4px;
+}
+#main-up-one >span{
+	display:inline-block;
+	width:50px;
+	height:25px;
+	position:absolute;
+	right:20px;
+	top:30px;
+	background:#2189bf;
+	color:white;
+	text-align:center;
+	line-height:25px;
+	border-radius:10%;
+}
+#main-up-one >span:hover{
+	background:rgb(25,105,147);
+}
+/*----------------------------------------------*/
+
+#main-up-two{
+	width:100%;
+	height:65px;
+	background:#eeeeed;
+	margin-bottom:8px;
+	position:relative;
+}
+#main-up-two div{
+	display:inline-block;
+	background:white;
+}
+.up-two-list{
+	cursor:pointer;
+	width:110px;
+	height:calc(100% - 5px);
+	border-top:5px solid white;
+}
+.up-two-list:hover{
+	border-color:#2189bf;
+}
+.up-two-leftright{
+	height:100%;
+	cursor:pointer;
+}
+#main-up-two > div:first-child{
+	margin-right:8px;
+	width:30px;
+	float:left;
+}
+#main-up-two > div:nth-child(8){
+	position:absolute;
+	top:0;
+	margin-left:8px;
+	width:30px;
+}
+.up-two-leftright .glyphicon{
+	position:relative;
+	top:25px;
+	left:8px;
+}
+#main-up-two >div:last-child{
+	width:130px;
+	height:100%;
+	float:right;
+	position:relative;
+}
+.up-two-clock{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:0;
+}
+.up-two-money{
+	font-size:160%;
+	text-align:center;
+	color:#ec6500;
+}
+.up-two-money span{
+	margin-right:5px;
+	color:grey;
+}
+#main-up-two >div:last-child span:first-child{
+	font-size:200%;
+	color:rgb(56,138,193);
+	line-height:65px;
+	margin-right:15px;
+	margin-left:20px;
+}
+#main-up-two>div:last-child span:last-child{
+	position:absolute;
+	top:25px;
+}
+/*----------------------------------------------*/
+#content-main >span{
+	line-height:25px;
+}
+/*----------------------------------------------*/
+#main-up-three{
+	width:100%;
+	height:70px;
+	background:#eeeeed;
+	margin-bottom:8px;
+}
+#main-up-three >div{
+	display:inline-block;
+	background:white;
+	width:calc(23.5% - 3px);
+	border-left:3px solid green;
+	height:100%;
+	margin-right:2%;  /*突然想到所谓的响应式页面不久是布局时注意尽量用 % 而不是确切的数嘛*/
+}
+#main-up-three>div:first-child{
+	border-color:#43b29e;
+}
+#main-up-three>div:nth-child(2){
+	border-color:#2189bf;
+}
+#main-up-three>div:nth-child(3){
+	border-color:#d04a36;
+}
+#main-up-three>div:nth-child(4){
+	border-color:#e2cd46;
+}
+#main-up-three>div:last-child{
+	margin-right:0;
+}
+#main-up-three>div>p{
+	display:inline-block;
+	margin-left:20px;
+	color:grey;
+}
+#main-up-three>div>p:first-child{
+	margin-top:15px;
+	color:black;
+}
+#main-up-three>div>div{
+	float:right;
+	margin-top:15px;
+	margin-right:20px;
+	width:60px;
+	height:46px;
+	background:#43b29e;
+}
+#main-up-three #color-two{
+	background:#2189bf;
+}
+#main-up-three #color-three{
+	background:#d04a36;
+}
+#main-up-three #color-four{
+	background:#e2cd46;
+}
+
+/*----------------------------------------------*/
+.main-down{
+	display:inline-block;	
+	box-shadow:3px -3px 1px 1px rgba(0, 0, 0, 0.1);
+	border-radius:5px;
+}
+.main-down >p:first-child{
+	line-height:39px;
+	background:#f4f5f6;
+	border:1px solid #e6e6e8;
+	color:grey;
+	padding-left:20px;
+}
+/*----------------------------------------------*/
+#main-down-one{
+	width:58%;
+	height:357px;
+	background:white;
+	margin-right:14px;
+	margin-right:calc(2% - 4px); /*如果浏览器支持calc就用这个，上面那个就覆盖掉了。*/
+	margin-bottom:3px;
+	float:left;
+}
+#main-down-one >p:first-child{
+	line-height:39px;
+	background:#f4f5f6;
+	border:1px solid #e6e6e8;
+}
+
+#table-div{
+	width:472px;
+	height:240px;
+	margin-left:25px;
+	border:1px solid #cacbcb;
+	position:relative;
+	top:29px;
+	border-radius:0 5px 5px 5px;
+}
+#table-div label{
+	display:inline-block;
+	width:86px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	background:#ededf0;
+	border-radius:5px 5px 0 0;
+	position:relative;
+	top:-29px;
+	left:-1px;
+	margin-right:3px;
+	color:grey;
+}
+#table-div >div{
+	width:406px;
+	height:176px;
+	position:absolute;
+	z-index:10;
+	opacity:0;
+	margin:30px auto auto 30px;
+	margin-left:calc((100% - 408px )/2);  /*浏览器支持calc函数的话，就用这个，不支持就30px*/
+}
+#table-div input{
+	position:absolute;
+	visibility:hidden;
+}
+#table-div input:checked + div{
+	opacity:1;
+	z-index:50;
+}
+#radio-one:checked ~ div ~ #label-one{
+	background:white;
+	border:1px solid #cacbcb;
+	border-bottom-color:white;
+}
+#radio-two:checked ~ div ~ #label-two{
+	background:white;
+	border:1px solid #cacbcb;
+	border-bottom-color:white;
+}
+#radio-three:checked ~ div ~ #label-three{
+	background:white;
+	border:1px solid #cacbcb;
+	border-bottom-color:white;
+}
+#radio-four:checked ~ div ~ #label-four{
+	background:white;
+	border:1px solid #cacbcb;
+	border-bottom-color:white;
+}
+#radio-five:checked ~ div ~ #label-five{
+	background:white;
+	border:1px solid #cacbcb;
+	border-bottom-color:white;
+}
+table{
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+td{
+	border:1px solid #cacbcb;
+	width:25%;
+}
+td:hover{
+	background:#ededf0;
+}
+
+/*----------------------------------------------*/
+#main-down-two{
+	width:40%;
+	height:357px;
+	background:white;
+	margin-bottom:3px;
+}
+#down-two-title{
+	width:300px;
+	height:50px;
+	margin-left:30px;
+	border-bottom:1px solid #ccc;
+}
+#down-two-title p{
+	color:grey;
+	margin-bottom:3px;
+}
+#down-two-price{
+	display:inline-block;
+	width:94px;
+	height:43px;
+	margin-left:30px;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding-left:10px;
+}
+#down-two-price p{
+	margin-top:5px;
+	color:grey;
+	margin-bottom:0;
+}
+#down-two-chargeman{
+	display:inline-block;
+	width:196px;
+	height:43px;
+	border-bottom:1px solid #ccc;
+}
+#down-two-chargeman p{
+	margin-top:5px;
+	color:grey;
+	margin-bottom:0;
+	margin-left:10px;
+}
+#down-two-chargeman span{
+	margin-left:10px;
+}
+#down-two-describ{
+	margin-left:30px;
+	width:300px;
+	height:140px;
+	border-bottom:1px solid #ccc;
+}
+#down-two-describ p{
+	margin-top:5px;
+	margin-bottom:5px;
+	color:grey;
+}
+#main-down-two >input{
+	margin:10px 5px 0 30px;
+}
+#main-down-two >span:nth-child(7){
+	color:grey;
+	position:relative;
+	top:-2px;
+}
+#down-two-button{
+	display:inline-block;
+	width:52px;
+	height:24px;
+	background:rgb(33,137,191);
+	line-height:24px;
+	text-align:center;
+	border-radius:3px;
+	position:relative;
+	left:160px;
+	color:white;
+}
+#down-two-button:hover{
+	background:rgb(25,105,147);
+}
+/*----------------------------------------------*/
+#main-down-three{
+	width:39%;
+	height:338px;
+	background:white;
+	margin-top:8px;
+	margin-right:14px;
+	margin-right:calc(2% - 4px); /*如果浏览器支持calc就用这个，上面那个就覆盖掉了。*/
+}
+#main-down-three >div{
+	display:inline-block;
+}
+#down-three-up{
+	width:86%;
+	margin-left:7%;
+	margin-bottom:6px;
+}
+#down-three-up select,#down-three-up span{
+	width:calc(24% - 2px);
+	margin-right:1.333%;
+	text-align:center;
+	height:23px;
+	line-height:25px;
+}
+#down-three-up span{
+	display:inline-block;
+	border:1px solid grey;
+	margin-right:0;
+}
+#day-list{
+	width:86%;
+	margin-left:7%;
+	height:30px;
+	border-top:1px solid rgb(33,137,191);
+	border-bottom: 1px solid #bbb;
+}
+#day-list td{
+	width:14.285%;
+	border:none;
+}
+#day-list td:hover{
+	background:white;
+}
+#down-three-down{
+	width:86%;
+	margin-left:7%;
+}
+#down-three-down td{
+	width:calc(14.285%);
+	height:38px;
+	position:relative;
+	border:none;
+}
+#down-three-down td p:first-child{
+	margin-bottom:0;
+	font-weight:bold;
+}
+.festival{
+	color:rgb(139,0,0);
+}
+.col-6,.col-7{
+	color:rgb(139,0,0);
+}
+#down-three-down #day-8{
+	border:1px solid #f8d573;
+}
+#down-three-down td:hover{
+	border:1px solid #f8d573;
+}
+
+/*----------------------------------------------*/
+#main-down-four{
+	width:59%;
+	height:338px;
+	background:white;
+	float:right;
+	margin-top:8px;
+}
+#down-four-main{
+	width:84%;
+	margin:16px auto auto 8%;
+	height:70%;
+}
+#down-four-main td{
+	width:20%;
+	height:10%;
+	position:relative
+}
+#down-four-main tr:first-child{
+	font-weight:bold;
+}
+#down-four-main tr td:last-child{
+	width:60%;
+	text-align:left;
+}
+#down-four-main tr td:last-child span:first-child{
+	margin-left:20px;
+}
+.grey-color{
+	display:inline-block;
+	background:#cbcccc;
+	width:160px;
+	height:5px;
+	position:absolute;
+	top:9px;
+	left:85px;
+	border-radius:3px;
+}
+#red-color{
+	display:inline-block;
+	width:140px;
+	height:5px;
+	background:red;
+	position:absolute;
+	left:-20px;
+	border-radius:3px;
+}
+#yellow-color{
+	display:inline-block;
+	width:120px;
+	height:5px;
+	background:orange;
+	position:absolute;
+	left:-20px;
+	border-radius:3px;
+}
+#blue-color{
+	display:inline-block;
+	width:110px;
+	height:5px;
+	background:#08c;
+	position:absolute;
+	left:-20px;
+	border-radius:3px;
+}
+.blue{
+	display:inline-block;
+	width:75px;
+	height:5px;
+	background:#08c;
+	position:absolute;
+	left:-20px;
+	border-radius:3px;
+}
+/*----------------------------------------------*/

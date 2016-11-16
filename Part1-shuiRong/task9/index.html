@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel='stylesheet' href='../css/task9.css'>
+	
+</head>
+<body>
+	<div id='container'>
+
+		<div id='nav'>
+			<img src='../images/9-1.png' alt='logo png'>
+			<div>
+				<span id='search-logo'><span class='glyphicon glyphicon-search'></span></span><input type='text'><span id='user-logo'><span class='glyphicon glyphicon-user'></span></span><span><a href='#'>登入</a></span>
+			</div>
+		</div>
+
+		<div id='main'>
+			<div id='aside'>
+				<div id='profile'>
+					<span><img src='../images/lana.jpg' alt='profile jpg'></span><span>Lana</span>
+					<div>
+						<span class='profile-left'>110</span><span>313</span><br>
+						<span class='profile-left'>收藏</span><span>粉丝</span>
+					</div>
+				</div>
+				<div id='after-profile'>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-briefcase aside-level-one'></span><span>个人报表</span></p>
+					<p><span class='glyphicon glyphicon-chevron-down profile-icon-inside'></span><span class='glyphicon glyphicon-folder-open'></span><span>文件夹一</span></p>
+					<p><span class='glyphicon glyphicon-file'></span><span>文档</span></p>
+					<p><span class='glyphicon glyphicon-chevron-right profile-icon-inside'></span><span class='glyphicon glyphicon-folder-open'></span><span>文件夹一</span></p>
+				</div>
+				<div id='after-after-profile'>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-star aside-level-one'></span><span>个人收藏</span></p>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-gift aside-level-one'></span><span>我的分享</span></p>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-star aside-level-one'></span><span>图库</span></p>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-star aside-level-one'></span><span>成长记录</span></p>
+					<p class='after-profile-icon'><span class='glyphicon glyphicon-tasks aside-level-one'></span><span>账户信息</span></p>
+				</div>
+			</div>
+
+			<div id='content'>
+				<div id='content-nav'>
+					<span><span class='content-nav-span'>C站</span>/<span class='content-nav-span'>个人报表</span>/<span class='content-nav-span'>文件一</span>/<span class='content-nav-span'>文档一</span></span>
+				</div>
+
+				<div id='content-main'>
+					<div id='main-up-one'>
+						<div>
+							<div>
+								<span>查询项</span><select name='select-one'>
+													<option selected='selected' value='project-one'>第一项目</option>
+													<option value='project-two'>第二项目</option>
+												</select>
+							</div>
+							<div>
+								<span>买方</span><select name='select-two'>
+												<option selected='selected' value='a'>小a</option>
+												<option value='b'>大b</option>
+												</select>
+								<br><span>卖方</span><select name='select-three'>
+												<option  selected='selected' value='c'>小c</option>
+												<option value='d'>大d</option>
+												</select>
+							</div>
+							<img src='../images/9-2.png' alt='a image'> 
+						</div>
+
+						<div>
+							<span class='main-up-one-bottom'>日期</span><input type='text' placeholder='yyyy-mm-dd' class='main-up-one-bottom'>
+							<span id='waste-time' class='main-up-one-bottom'>总耗时</span><select class='main-up-one-bottom'>
+													<option selected='selected'>1天</option>
+													<option>2天</option>
+ 											   </select>
+							<br>
+							<span>人数</span><select>
+													<option selected='selected'>1人</option>
+													<option>2人</option>
+											 </select>
+							<span>成交项目</span><select>
+														<option>3项</option>
+														<option>999项</option>
+												 </select>
+						</div>
+						<span>搜索</span>
+					</div>
+					<div id='main-up-two'>
+						<div class='up-two-leftright'>
+							<span class='glyphicon glyphicon-chevron-left'></span>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>8:00 am</p>
+							<p class='up-two-money'><span>¥</span>1200</p>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>9:10 am</p>
+							<p class='up-two-money'><span>¥</span>1300</p>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>10:20 am</p>
+							<p class='up-two-money'><span>¥</span>1400</p>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>11:30 am</p>
+							<p class='up-two-money'><span>¥</span>1500</p>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>12:40 am</p>
+							<p class='up-two-money'><span>¥</span>1600</p>
+						</div>
+						<div class='up-two-list'>
+							<p class='up-two-clock'>13:50 am</p>
+							<p class='up-two-money'><span>¥</span>1700</p>
+						</div>
+						<div class='up-two-leftright'>
+							<span class='glyphicon glyphicon-chevron-right'></span>
+						</div>
+						<div>
+							<span class='glyphicon glyphicon-list-alt'></span><span>历史查询</span>
+						</div>
+					</div>
+					<span>2016年4月份统计</span>
+					<div id='main-up-three'>
+						<div><p>19536</p><div id='color-one'></div><br><p>成交量</p></div><div><p>19536</p><div id='color-two'></div><br><p>成交量</p></div><div><p>19536</p><div id='color-three'></div><br><p>成交量</p></div><div><p>19536</p><div id='color-four'></div><br><p>成交量</p></div>
+					</div>
+
+
+					<div id='main-down-one' class='main-down'>
+						<p>据说是项目</p>
+						<div id='table-div'>
+
+							<input type='radio' name='radio-name' id='radio-one' checked='checked'>
+							<div id='table-div-one'>
+								<table>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+									<tr>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+										<td>Lana Del Rey</td>
+									</tr>
+								</table>
+							</div>
+							<input type='radio' name='radio-name' id='radio-two'>
+							<div id='table-div-two'>
+								<table>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+									<tr>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+										<td>Taylor Swfit</td>
+									</tr>
+								</table>
+							</div>
+							<input type='radio' name='radio-name' id='radio-three'>
+							<div id='table-div-three'>
+								<table>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+									<tr>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+										<td>Lorde</td>
+									</tr>
+								</table>
+							</div>
+							<input type='radio' name='radio-name' id='radio-four'>
+							<div id='table-div-four'>
+								<table>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+									<tr>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+										<td>Zella Day</td>
+									</tr>
+								</table>
+							</div>
+							<input type='radio' name='radio-name' id='radio-five'>
+							<div id='table-div-five'>
+								<table>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+									<tr>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+										<td>Birdy</td>
+									</tr>
+								</table>
+							</div>
+							<label for='radio-one' id='label-one'><span>项目一</span></label><label for='radio-two' id='label-two'><span>项目二</span></label><label for='radio-three' id='label-three'><span>项目三</span></label><label for='radio-four' id='label-four'><span>项目四</span></label><label for='radio-five' id='label-five'><span>项目五</span></label>
+						</div>
+					</div>
+					<div id='main-down-two' class='main-down'>
+						<p>我跟左边的名字一样</p>
+						<div id='down-two-title'>
+							<p>标题</p>
+							<span>项目报表三</span>
+						</div>
+						<div id='down-two-price'>
+							<p>价格</p>
+							<span>¥123</span>
+						</div><div id='down-two-chargeman'>
+							<p>负责人</p>
+							<span>小A</span>
+						</div>
+						<div id='down-two-describ'>
+							<p>详细描述</p>
+							<span>项目负责人. . .</span>
+						</div>
+						<input type='checkbox'><span>遵守保密协议</span><span id='down-two-button'>搜索</span>
+					</div>
+					<div id='main-down-three' class='main-down'>
+						<p>你看我像不像日历</p>
+						<div id='down-three-up'>
+							<select><option>2016年</option></select><select><option>4月</option></select><select><option>标注日期</option></select><span>返回今天</span>
+						</div>
+						<div id='day-list'>
+							<table>
+								<tr>	
+									<td>一</td>
+									<td>二</td>
+									<td>三</td>
+									<td>四</td>
+									<td>五</td>
+									<td>六</td>
+									<td>日</td>
+								</tr>
+							</table>
+						</div>
+						<div id='down-three-down'>
+							<table>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><p>1</p><span class='festival'>愚人节</span></td>
+									<td><p class='col-6'>2</p><span>廿五</span></td>
+									<td><p class='col-7'>3</p><span>廿六</span></td>
+								</tr>
+								<tr>
+									<td><p>4</p><span>廿七</span></td>
+									<td><p>5</p><span class='festival'>清明</span></td>
+									<td><p>6</p><span>廿九</span></td>
+									<td><p>7</p><span>三月</span></td>
+									<td id='day-8'><p>8</p><span>初二</span></td>
+									<td><p class='col-6'>9</p><span>初三</span></td>
+									<td><p class='col-7'>10</p><span>初四</span></td>
+								</tr>
+								<tr>
+									<td><p>11</p><span>初五</span></td>
+									<td><p>12</p><span>初六</span></td>
+									<td><p>13</p><span>初七</span></td>
+									<td><p>14</p><span>初八</span></td>
+									<td><p>15</p><span>初九</span></td>
+									<td><p class='col-6'>16</p><span>初十</span></td>
+									<td><p class='col-7'>17</p><span>十一</span></td>
+								</tr>
+								<tr>
+									<td><p>18</p><span>十二</span></td>
+									<td><p>19</p><span>十三</span></td>
+									<td><p>20</p><span>十四</span></td>
+									<td><p>21</p><span>十五</span></td>
+									<td><p>22</p><span>十六</span></td>
+									<td><p class='col-6'>23</p><span>十七</span></td>
+									<td><p class='col-7'>24</p><span>十八</span></td>
+								</tr>
+								<tr>
+									<td><p>25</p><span>十九</span></td>
+									<td><p>26</p><span>廿十</span></td>
+									<td><p>27</p><span>廿一</span></td>
+									<td><p>28</p><span>廿二</span></td>
+									<td><p>29</p><span>廿三</span></td>
+									<td><p class='col-6'>30</p><span>廿四</span></td>
+									<td><p class='col-7'></p><span></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id='main-down-four' class='main-down'>
+						<p>就是一个排行榜</p>
+						<div id='down-four-main'>
+							<table>
+								<tr>
+									<td>排名</td>
+									<td>品牌</td>
+									<td><span>搜索指数</span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span id='red-color'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span id='yellow-color'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span id='blue-color'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>特斯拉</td>
+									<td><span>9999999</span><span class='grey-color'><span class='blue'></span></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
