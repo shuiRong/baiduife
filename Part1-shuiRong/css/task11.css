@@ -1,0 +1,207 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:12px;
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	background:#999;
+}
+
+@media (min-width:500px){
+	#container{
+		width:30%;
+		margin:0 auto;
+	}
+}
+
+@media (max-width:499px){
+	#container{
+		width:100%;
+	}
+}
+
+#container{
+	background:#f2f2f2;
+}
+#main{
+	background:white;
+	margin-bottom:1.5rem;
+}
+#title{
+	height:5rem;
+	background:#80cbd1;
+	position:relative;
+	text-align:center;
+	line-height:5rem;
+	color:white;
+}
+#title >span{
+	display:inline-block;
+	position:absolute;
+	font-size:2.5rem;
+	left:2rem;
+}
+#title >span>span:nth-child(2){
+	font-size:1.5rem;
+	position:relative;
+	top:-0.2rem;
+	left:0.4rem;
+}
+#nav{
+	height:5rem;
+	display:flex;	
+	justify-content:space-around;
+}
+#nav >span{
+	display:inline-block;
+	box-sizing:border-box;  /*这个属性用的6的话，有时也是能起到很不错的效果的*/
+	font-size:1.5rem;
+	height:5rem;
+	width:20%;
+	text-align:center;
+	line-height:5rem;
+}
+#nav >span:nth-child(2){
+	border-bottom:0.4rem solid #80cbd1;
+}
+#after-nav{
+	height:24rem;
+}
+#after-nav img{
+	width:100%;
+	height:100%;
+}
+
+#label-list>div{
+	height:12rem;
+	display:flex;
+	justify-content:space-between;
+	box-sizing:border-box;
+	margin:0 5%;
+	border-bottom:0.2rem solid grey;
+}
+#label-list >div>div{
+	text-align:center;
+	margin-top:2rem;
+}
+#label-list img{
+	width:80%;
+	height:5rem;
+	border-radius:50%;
+	margin-bottom:1rem;
+}
+
+#three-cols{
+	height:18rem;
+}
+#three-cols>div{
+	margin:5%;
+	display:flex;
+}
+#three-cols >div >div{
+	width:33.33%;
+	box-sizing:border-box;
+	text-align:center;
+	border-right:0.1rem solid #ccc;
+}
+#three-cols >div >div:last-child{
+	border-right:none;
+}
+#three-cols>div>div img{
+	width:70%;
+	height:11rem;
+	margin-bottom:1rem;
+}
+#three-cols  h3,#three-cols  h4{
+	margin-bottom:1rem;
+}
+#three-cols h4{
+	color:#333;
+}
+
+.section{
+	padding:1rem;
+	height:28rem;
+	margin-bottom:1.5rem;
+}
+.section-up{
+	height:4rem;
+	border-bottom:0.1rem solid grey;
+}
+.section-mid,.section-down{
+	margin-top:1rem;
+	margin-bottom:1rem;
+	display:flex;
+	height:39%;
+	justify-content:space-between;
+}
+.center-div, .right-div{
+	display:inline-block;
+	width:32%;
+}
+.center-div>div,.right-div>div{
+	height:47%;
+	background:grey;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+.img-div{
+	width:25%;
+	height:100%;
+}
+.img-div img{
+	width:100%;
+	height:100%;
+}
+
+.center-div >div:first-child,.right-div >div:first-child{
+	margin-bottom:6%;
+}
+
+.foot-section{
+	padding:1rem;
+	height:11rem;
+	border-bottom:0.1rem solid grey;
+	display:flex;
+	color:grey;
+}
+#foot-section-up div:nth-child(2),#foot-section-mid div:nth-child(2){
+	width:40%;
+}
+#foot-section-up p:first-child,#foot-section-mid p:first-child{
+	margin-bottom:25%;
+	font-size:200%;
+	color:black;
+}
+#foot-section-down{
+	flex-direction:column;
+	height:14rem;
+}
+#foot-section-down >div:nth-child(2){
+	display:flex;
+	justify-content: space-between;
+}
+#foot-section-down >div:nth-child(2) >div{
+	width:32%;
+}
+.foot-section-img-div{
+	width:28%;
+	height:100%;
+	margin-right:1.5rem;
+	display:inline-block;
+}
+.foot-section img{
+	width:100%;
+	height:100%;
+}
+#foot-section-down p:first-child{
+	margin-bottom:1rem;
+}
+#foot-section-down p:last-child{
+	margin-top:1rem;
+}
