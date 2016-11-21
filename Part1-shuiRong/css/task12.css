@@ -43,21 +43,13 @@ input:focus{
 #banner{
 	position:relative;
 }
-#banner img{
+#banner >img{
 	width:100%;
 	position:absolute;
-	opacity:10;
-}
-#temp{
-	z-index:100;
-	font-size:400%;
-	opacity:0.5;
-	background:white;
-	position:relative;
 }
 :target{
 	z-index:50;
-	animation:fadein 10s;
+	animation:fadein 2s;
 }
 @keyframes fadein {
 	from {
@@ -66,4 +58,17 @@ input:focus{
 	to {
 		left:0;
 	}
+}
+#btn{
+	z-index:100;
+	font-size:400%;
+	opacity:0.5;
+	background:white;
+	position:relative;
+	display:inline-block;
+	position:absolute;
+	right:0;
+}
+#btn a{
+	text-decoration:none;
 }
