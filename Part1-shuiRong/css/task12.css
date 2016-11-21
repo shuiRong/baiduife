@@ -40,6 +40,30 @@ input:focus{
 	width:80%;
 }
 
+#banner{
+	position:relative;
+}
 #banner img{
 	width:100%;
+	position:absolute;
+	opacity:10;
+}
+#temp{
+	z-index:100;
+	font-size:400%;
+	opacity:0.5;
+	background:white;
+	position:relative;
+}
+:target{
+	z-index:50;
+	animation:fadein 10s;
+}
+@keyframes fadein {
+	from {
+		left:-100%;
+	}
+	to {
+		left:0;
+	}
 }

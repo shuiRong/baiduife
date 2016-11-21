@@ -4,19 +4,15 @@
 }
 /************************************************/
 body{
-	width:1280px;
-	min-width:450px;
 	background-color:white;
 	font-size:14px;
 	font-family:'微软雅黑';
-	position:absolute;
-	top:-60px;
 }
 #container{
-	width:100%;
+	width:1280px;
 	position:relative;
 	
-	margin:0 auto;
+	margin-left:calc(calc(100% - 1280px)/2);
 }
 #nav{
 	position:relative;
