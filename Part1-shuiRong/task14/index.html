@@ -21,6 +21,7 @@ var aqiData = [
   ["福州", 10],
   ["广州", 50],
   ["成都", 90],
+  ["常德", 78],
   ["西安", 100]
 ];
 
@@ -31,21 +32,34 @@ var aqiData = [
   遍历读取aqiData中各个城市的数据
   将空气质量指数大于60的城市显示到aqi-list的列表中
   */
-    var aqiArr = function(){
+    var aqiArr = function(){   
         var temp = [];
         for(var i=0; i<aqiData.length; i++){
-        if(aqiData[i]>60){
-            temp.push(aqiData[i]);
+            if(aqiData[i][1]>60){              
+               /* temp[i][0].push(aqiData[i][0]);
+                temp[i][1].push(aqiData[i][1]);*/
+                temp.push(aqiData[i]);
+            }   
         }
-        }
-        temp.sort();
-        return temp;
+        temp.sort(function(a,b){
+            return b[1] - a[1];   //从大到小排序
+        });
+        return temp;  
     }
-    var display = function(){
-        aqiArr.foreach()
+    var done = function(){
+        aqiArr  = aqiArr();
+        aqiArr.forEach(display);
+
+    }
+    function display(element,index){
+        var uli = document.createElement('li');
+        uli.innerHTML = '第'+ (++index) +'名，'+element[0]+'，'+element[1];
+        var aqi_list = document.getElementById('aqi-list');
+        aqi_list.appendChild(uli);
     }
 
-    window.onload = display();
+
+    window.onload = done();
 
 })();
 
