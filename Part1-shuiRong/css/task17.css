@@ -1,0 +1,96 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:62.5%;
+	font-family: '微软雅黑';
+}
+fieldset{
+	width:68%;
+	height:4rem;
+	margin:3rem auto;
+	border-radius:1rem;
+	border-color:#ccc;
+	padding:2rem;
+	position:relative;
+	padding-left:5rem;
+}
+input{
+	visibility:hidden;
+}
+select{
+	display:inline-block;
+	margin-left:4rem;
+	width:8rem;
+	height:3rem;
+	padding-left:2rem;
+}
+label{
+	display:inline-block;
+	width:4rem;
+	height:4rem;
+	position:relative;
+	top:-1rem;
+	border-radius:50%;
+	text-align:center;
+	border:1px solid black;
+}
+label span{
+	position:relative;
+	top:33%;
+}
+#day:checked ~ #label-day{
+	background:black;
+	color:white;
+}
+#week:checked ~ #label-week{
+	background:black;
+	color:white;
+}
+#month:checked ~ #label-month{
+	background:black;
+	color:white;
+}
+
+.aqi-chart-wrap{
+	width:70%;
+	height:55rem;
+	margin:5rem auto;
+	border:1px solid #999;
+	border-radius:2rem;
+	position:relative;
+	overflow: hidden;
+}
+.aqi-span{
+	position:absolute;
+	bottom:0;
+	animation:sharp 0.7s ease-out;
+}
+.title{
+	position:relative;
+	display:none;
+	width:10rem;
+	height:3rem;
+	line-height:3rem;
+	top:-4rem;
+	text-align:center;
+	border:1px solid #ccc;
+	border-radius:0.5rem;
+	color:white;
+	z-index:100;
+	background:#ccc;
+}
+.title:hover{
+	background:black;
+}
+
+@keyframes sharp{
+	from {
+		bottom:-500px;
+	}
+	to{
+		bottom:0;
+	}
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <link rel='stylesheet' href='../css/task17.css'>
+  </head>
+<body>
+  <fieldset id="form-gra-time">
+    <legend>请选择日期粒度及城市：</legend>
+    <input id='day' name="gra-time" value="day" type="radio" checked="true" onclick='initTime("day")'>
+    <input id='week' name="gra-time" value="week" type="radio" onclick='initTime("week")'>
+    <input id='month' name="gra-time" value="month" type="radio" onclick='initTime("month")'>
+
+    <label id='label-day' for='day'><span>日</span></label>
+    <label id='label-week' for='week'><span>周</span></label>
+    <label id='label-month' for='month'><span>月</span></label>
+
+    <select id="city-select" onchange='initCity(this.value)'>
+      <option id='1'>北京</option>
+      <option id='2'>上海</option>
+      <option id='3'>广州</option>
+      <option id='4'>深圳</option>
+      <option id='5'>成都</option>
+      <option id='6'>西安</option>
+      <option id='7'>福州</option>
+      <option id='8'>厦门</option>
+      <option id='9'>沈阳</option>
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+    <!-- <div class='aqi-bar'>
+    </div>
+    <div class='aqi-bar'>
+    </div> -->
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>
