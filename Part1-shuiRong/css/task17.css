@@ -55,13 +55,14 @@ label span{
 
 .aqi-chart-wrap{
 	width:70%;
-	height:55rem;
+	height:50rem;
 	margin:5rem auto;
 	border:1px solid #999;
 	border-radius:2rem;
 	position:relative;
 	overflow: hidden;
 }
+
 .aqi-span{
 	position:absolute;
 	bottom:0;
@@ -93,4 +94,30 @@ label span{
 		bottom:0;
 	}
 
+}
+@media (min-height:900px){
+	.aqi-chart-wrap{
+		height:55rem;
+	}
+}
+@media (max-height:768px){
+	.aqi-chart-wrap{
+		height:44rem;
+		margin-top:0rem;
+	}
+	fieldset{
+		margin:1rem auto 2rem auto;
+		height:2rem;
+	}
+	label{
+		height:3rem;
+		width:3rem;
+		top:-2rem;
+	}
+	select{
+		position:relative;
+		top:-1.2rem;
+		height:2.5rem;
+	}
+	
 }
