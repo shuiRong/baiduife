@@ -41,7 +41,7 @@ var aqiSourceData = {
   "厦门": randomBuildData(100),
   "沈阳": randomBuildData(500)
 };
-//上面的那个数据作为元数据保留。后面程序所需数据从这里获取。
+//上面的那个数据作为元数据保留。后面程序所需数据都从这里获取。
 var copy_aqiSourceData = {
     "北京": aqiSourceData['北京'],
     "上海": aqiSourceData['上海'],
@@ -56,7 +56,7 @@ var copy_aqiSourceData = {
 // 用于渲染图表的数据
 var chartData = {
     'width':'0.5%',
-    'leftDistance':0.5   // 0.5是 0.5%的意思
+    'leftDistance':0.5   // 0.5是 0.5%的意思   距离左边的距离
 };
 
 // 记录当前页面的表单选项
@@ -83,7 +83,7 @@ function renderChart(leftNum) {
     var temp = tempArr.join('');
     aqi_chart_wrap.innerHTML = temp; 
 }
-
+// 获取每个柱子的信息，比如：2016-1-26 AQI:168
 function getTitle(AQI,ele){
     var text;
     if(ele.match(/[2016]/g)){
@@ -104,13 +104,13 @@ function hiddeTitle(which){
     title.style.display = 'none';   
 }
 
-//给柱状体增色
+//给柱状体增色，随机颜色
 function randomColor(){
     var colors = ['#99b4ce','#c1b9c2','#4e4a67','#393f65','#edae9e','#5a4563','#16324a','#24385e','#bec3cb'];
     return colors[Math.floor(Math.random()*9)];
 }
 
-//监听下拉菜单的城市状态
+//监听下拉菜单的城市状态的变化。需要注意的是：每次城市信息变化之后，copy_aqiSourceData里的相关数据也要变化。我第一次就在这吃亏了。
 function initCity(city){
     pageState.nowSelectCity = city;
     // console.log(copy_aqiSourceData[pageState.nowSelectCity]);
