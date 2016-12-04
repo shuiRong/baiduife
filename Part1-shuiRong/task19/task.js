@@ -89,7 +89,7 @@ function addListener(){
 //冒泡排序并 实现可视化
 function maopao(){
 
-	setTime = setInterval(run,30);
+	setTime = setInterval(run,1000);
 	function run(){
 			if(N!==0){	
 			for(var i=0; i<N; i++){
@@ -99,7 +99,6 @@ function maopao(){
 					datas[i+1] = temp;
 					$(i).style.height = datas[i] + 'px';
 					$(i+1).style.height = datas[i+1] + 'px';	
-					console.log(datas,'33');	
 				}
 			}
 			N--;
