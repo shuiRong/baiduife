@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">	
+<style>
+	html{
+		font-size:10px;
+	}
+	body{
+		font-size:2rem;
+		font-family:'微软雅黑';
+	}
+	#tag_div span,#habby span{
+		display:inline-block;
+		margin:1rem;
+		background:#eee;
+		width:16rem;
+		height:6rem;
+		text-align:center;
+		line-height:6rem;
+	}
+</style>
+</head>
+<body>
+	<div id='tag'><span>Tag:</span><input type='text' id='tag_input'></div>
+	<div id='tag_div'>
+		<!-- <span>nodejs</span><span>sublime text</span> -->
+	</div>
+	<textarea type='text' id='textarea'></textarea>
+	<button id='addButton'>添加爱好</button>
+	<div id='habby'>
+	</div>
+<script src='task.js'></script>
+</body>
+</html>
