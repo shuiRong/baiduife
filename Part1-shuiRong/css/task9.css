@@ -5,10 +5,12 @@
 	/*而且为了防止bootstrap覆盖掉这个设置，需要在html里把bootstrap的引用文件放在上面*/
 }
 body{
-	background:lightblue;
+	background:#fff;
 	width:1280px;
 	height:1256px;
 	font-size:12px;
+	margin-left:auto;
+	margin-right:auto;
 	font-family:Microsoft YaHei,arial,sans-serif,'宋体';
 }
 /*----------------------------------------------*/

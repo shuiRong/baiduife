@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">	
+
+<style>
+	html{
+		font-size:10px;
+	}
+	div{
+		border:2px solid grey;
+		font-size:2rem;
+	}
+	#nav{
+		border:none;
+		margin: 1% auto;
+		width:40%;
+	}
+	#nav button{
+		margin:0 0.5rem;
+	}
+	#root{
+		width:90%;
+		height:45rem;
+		margin:2% auto;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-around;
+		align-items:center;
+		background:white;
+	}
+	.child1{
+		width:46%;
+		height:42%;
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		background:white;
+	}
+	.child2{
+		width:25%;
+		height:80%;
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		background:white;
+	}
+	.child3{
+		width:30%;
+		height:80%;
+		background:white;
+	}
+</style>	
+</head>
+<body>
+	<div id='nav'>
+	<button id='dfs'>深度优先遍历</button><button id='bfs'>广度优先遍历</button><input type='text' id='input'><button id='dfsSearch'>深度优先搜索</button><button id='bfsSearch'>广度优先搜索</button>
+	</div>
+
+	<div id='root'>
+		app
+		<div class='child1'>
+			yel
+			<div class='child2'>
+				pink
+				<div class='child3'>
+				gre
+				</div>
+				<div class='child3'>
+				bana
+				</div>
+			</div>
+			<div class='child2'>
+				tay
+				<div class='child3'>
+				swift
+				</div>
+				<div class='child3'>
+				lana
+				</div>
+			</div>
+			<div class='child2'>
+				del
+				<div class='child3'>
+				gre
+				</div>
+				<div class='child3'>
+				black
+				</div>
+			</div>
+		</div>
+		<div class='child1'>
+			gre
+			<div class='child2'>
+			app
+			</div>
+			<div class='child2'>
+				lor
+				<div class='child3'>
+				lana
+				</div>
+				<div class='child3'>
+				code
+				</div>
+			</div>
+			<div class='child2'>
+			shame
+			</div>
+		</div>
+		<div class='child1'>
+		pity
+		</div>
+	</div>
+
+<script src='task.js'></script>
+</body>
+</html>
