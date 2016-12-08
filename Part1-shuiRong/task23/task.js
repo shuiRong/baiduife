@@ -1,6 +1,7 @@
 var list = []; //存储有序的节点对象
 var setTime = null;
 var nodeValues = [];  //存每个节点的文本节点
+var curNode = null; //当前所点击的节点。
 
 window.onload = function(){
 	var root = $('root');
@@ -41,6 +42,12 @@ window.onload = function(){
 
 function $(id){
 	return document.getElementById(id);
+}
+
+function clicked(which){
+	which.style.background = 'green';
+	curNode = which;
+	console.log(which);
 }
 
 //深度优先遍历.前中后序遍历都是dfs，我这里就用前序吧：根-左-右

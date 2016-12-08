@@ -12,12 +12,12 @@
 		border:2px solid grey;
 		font-size:2rem;
 	}
-	#nav{
+	#nav,#under-nav{
 		border:none;
 		margin: 1% auto;
 		width:40%;
 	}
-	#nav button{
+	#nav button,#under-nav button{
 		margin:0 0.5rem;
 	}
 	#root{
@@ -55,60 +55,63 @@
 </head>
 <body>
 	<div id='nav'>
-	<button id='dfs'>深度优先遍历</button><button id='bfs'>广度优先遍历</button><input type='text' id='input'><button id='dfsSearch'>深度优先搜索</button><button id='bfsSearch'>广度优先搜索</button>
+	<button id='dfs'>深度优先遍历</button><button id='bfs'>广度优先遍历</button><input type='text' id='input' placeholder='要搜索什么？'><button id='dfsSearch'>深度优先搜索</button><button id='bfsSearch'>广度优先搜索</button>
+	</div>
+	<div id='under-nav'>
+		<button id='delCurNode'>删除当前选中节点</button><input id='addInfo' placeholder='要添加什么？'><button id='addCurNode'>添加内容到当前节点</button>
 	</div>
 
-	<div id='root' onclick = "clicked(this);">
+	<div id='root'>
 		app
-		<div class='child1' onclick = "clicked(this);">
+		<div class='child1' id='child1-1'>
 			yel
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-1'>
 				pink
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-1'>
 				gre
 				</div>
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-2'>
 				bana
 				</div>
 			</div>
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-2'>
 				tay
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-3'>
 				swift
 				</div>
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-4'>
 				lana
 				</div>
 			</div>
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-3'>
 				del
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-5'>
 				gre
 				</div>
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-6'>
 				black
 				</div>
 			</div>
 		</div>
-		<div class='child1' onclick = "clicked(this);">
+		<div class='child1' id='child1-2'>
 			gre
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-4'>
 			app
 			</div>
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-5' >
 				lor
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-7'>
 				lana
 				</div>
-				<div class='child3' onclick = "clicked(this);">
+				<div class='child3' id='child3-8'>
 				code
 				</div>
 			</div>
-			<div class='child2' onclick = "clicked(this);">
+			<div class='child2' id='child2-6'>
 			shame
 			</div>
 		</div>
-		<div class='child1' onclick = "clicked(this);">
+		<div class='child1' id='child1-3'>
 		pity
 		</div>
 	</div>
