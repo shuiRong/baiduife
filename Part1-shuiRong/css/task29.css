@@ -1,0 +1,38 @@
+html{
+	font-size:20px;
+}
+*{
+	margin:0;
+	padding:0;
+}
+#container{
+	text-align:center;
+	width:40%;
+	margin:2% auto;
+}
+.hidden{
+	visibility: hidden;
+}
+.correct{
+	color:lightgreen;
+}
+.wrong{
+	color:red;
+}
+#inputInfo{
+	width:40%;
+	height:1.3rem;
+	outline:none;
+	border:1px solid #ccc;
+}
+#info{
+	position:relative;
+	font-size:0.9rem;
+	top:0.3rem;
+	left:-2.2rem;
+}
+#btnInfo{
+	width:2rem;
+	height:1.3rem;
+	
+}
